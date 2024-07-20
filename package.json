@@ -14,13 +14,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build:backend": "cd backend && node index.js",
-    "build": "npm run build:frontend && node index.js:backend"
-  },
+  "start": "react-scripts start",
+  "build:frontend": "react-scripts build",
+  "build:backend": "cd backend && npm install && npm run build", // Ensure backend is built if using TypeScript
+  "build": "npm run build:frontend && npm run build:backend",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+}
+
   "eslintConfig": {
     "extends": [
       "react-app",
