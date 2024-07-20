@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:backend": "cd backend && node index.js",
-  "build": "npm run build:frontend && node index.js:backend"
+    "build": "npm run build:frontend && node index.js:backend"
   },
   "eslintConfig": {
     "extends": [
